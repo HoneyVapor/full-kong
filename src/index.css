@@ -23,3 +23,13 @@ html, body{
   width: 100vw;
   height: 100vh;
 }
+
+.titles{
+  font-family: var(--titles);
+}
+.text{
+  font-family: var(--text);
+}
+.text-scnd{
+  font-family: var(--text-secondary);
+}

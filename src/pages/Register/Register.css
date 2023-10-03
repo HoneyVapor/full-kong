@@ -1,0 +1,44 @@
+.register-principal-container{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    background-color: var(--darkblue);
+}
+
+.register-top-bar{
+    width: 100vw;
+    height: 10vh;
+
+    font-size: calc(1rem + 1vh);
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+.register-top-bar p{
+    padding: 3vh;
+}
+
+
+#register-return-icon:hover{
+    color: var(--lightblue);
+}
+
+.inp-rounded{
+    border-radius: 15px;
+    text-align: center !important;
+}
+
+#register-send-btn{
+    margin-top: 2.5vh;
+
+    font-size: calc(1rem + .05vh);
+    color: var(--lightblue);
+    text-transform: uppercase;
+    font-weight: 600;
+}
