@@ -8,22 +8,47 @@ import "./Login.css";
 export const Login = () => {
   const { handleChangePage } = useContext(PrincipalContext);
 
+
+
+
+
+
+  
+
   return (
     <>
-      <div className="row">
-        <div className="col-md-12 d-flex justify-content-center pt-5">
-          <p className="text-scnd"> Aqui se mete el login... &nbsp; </p>
+    
+      <h2 className="login-title titles">Full Kong</h2>
+      <div className="login-container">
 
-          <button
-            className="btn btn-primary text-scnd"
-            type="button"
-            onClick={() => {
-              handleChangePage(<Register />);
-            }}
-          >
-            Registrate
-          </button>
+        <div>
+
+          <form className="login-form">
+
+            <input type="text" name="usuario" placeholder="Usuario"/>
+            <input type="password" name="password" placeholder="Contraseña"/>
+
+            <pre className="login-registrarse"> ¿Aún  no tienes una cuenta? 
+              <button
+                type="button"
+                onClick={() => {
+                  handleChangePage(<Register />);
+                }}>
+                 Registrate
+              </button>
+            </pre>
+
+            <button className="login-iniciar text"
+                type="button"
+                onClick={() => {
+                  handleChangePage(<Register />);
+                }}>
+                 Entrar
+              </button>
+                
+          </form>
         </div>
+
       </div>
     </>
   );
