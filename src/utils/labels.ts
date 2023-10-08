@@ -7,3 +7,11 @@ export const register_inputs = {
   pass2: `Confirme la contraseña`,
   phon: `Digite un numero de maximo 10 cifras`,
 };
+
+export const navbar_elements = {
+  home: "Principal",
+  exercises: "Ejercicios",
+  progress: "Progreso",
+  profile: "Perfil",
+  premium: "Premium",
+};

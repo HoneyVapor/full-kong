@@ -1,0 +1,46 @@
+.nav-bar-container{
+    display: block;
+    width: 100vw;
+    height: max-content;
+    background-color: var(--lightgrey);
+
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-bar{
+    display: block;
+
+    border-top: 3px var(--black) solid;
+
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-bar-element{
+    display: block;
+    width: 15vw;
+    float: left;
+
+    text-align: center;
+    margin-left: 5vw;
+}
+
+.nav-bar-icon{
+    font-size: calc(1rem + 3.5vh);
+    color: var(--black);
+    text-shadow: 2px 2px 2px var(--grey);
+
+    transition: all .5s;
+}
+.nav-bar-icon:hover{
+    color: var(--grey);
+    cursor: pointer;
+}
+.nav-bar-icon.active{
+    color: var(--lightblue);
+    cursor: pointer;
+}
