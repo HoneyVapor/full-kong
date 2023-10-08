@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { PrincipalContext } from "../../context/PrincipalContext";
 
-import { Principal } from "../Principal/Principal";
 import { Register } from "../Register/Register";
+import { Principal } from "../Principal/Principal";
 
 import "./Login.css";
 
@@ -11,25 +11,36 @@ export const Login = () => {
 
   return (
     <>
-      <div className="row">
-        <div className="col-md-12 d-flex justify-content-center pt-5">
-          <p className="text-scnd"> Aqui se mete el login... &nbsp; </p>
+      <h2 className="login-title titles">Full Kong</h2>
+      <div className="login-container">
+        <div>
+          <form className="login-form">
+            <input type="text" name="usuario" placeholder="Usuario" />
+            <input type="password" name="password" placeholder="Contraseña" />
 
-          <button
-            className="btn text-scnd"
-            type="button"
-            onClick={() => handleChangePage(<Principal />)}
-          >
-            Entrar
-          </button>
+            <pre className="login-registrarse">
+              {" "}
+              ¿Aún no tienes una cuenta?
+              <button
+                type="button"
+                onClick={() => {
+                  handleChangePage(<Register />);
+                }}
+              >
+                Registrate
+              </button>
+            </pre>
 
-          <button
-            className="btn btn-primary text-scnd"
-            type="button"
-            onClick={() => handleChangePage(<Register />)}
-          >
-            Registrate
-          </button>
+            <button
+              className="login-iniciar text"
+              type="button"
+              onClick={() => {
+                handleChangePage(<Principal />);
+              }}
+            >
+              Entrar
+            </button>
+          </form>
         </div>
       </div>
     </>
