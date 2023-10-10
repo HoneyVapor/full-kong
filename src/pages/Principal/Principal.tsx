@@ -1,15 +1,19 @@
-import { useContext } from "react";
-import { PrincipalContext } from "../../context/PrincipalContext";
+
+import { Carrousel } from './Carrousel';import { Headers } from './Headers';
+
 
 import { NavBar } from "../../components/NavBar/NavBar";
 
 import "./Principal.css";
 
 export const Principal = () => {
-  const { actualScreen } = useContext(PrincipalContext);
+
   return (
     <>
-      {actualScreen}
+
+    <Headers/>
+
+
       <NavBar />
     </>
   );

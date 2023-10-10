@@ -28,6 +28,7 @@
 }
 .login-registrarse{
     font-size:.9rem;
+    color:var(--white);
 }
 .login-registrarse button{
     background: none;

@@ -1,0 +1,31 @@
+.card-scroll{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    overflow-x: auto;
+}
+.scroll-3d{
+    width: 70vw;
+    height: 70vh;
+
+    float: left;
+
+    margin-left: 5vw !important;
+
+    background-color: var(--darkblue);
+    color: var(--white);
+    transition: all .5s;
+}
+.scroll-3d.active{
+    width: 80vw;
+    height: 80vh;
+}
+.row>*{
+    padding: 90vh 0 0 0;
+}
+.container{
+    overflow-x: hidden;
+    padding: 0;
+}
