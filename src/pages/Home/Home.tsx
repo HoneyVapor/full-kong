@@ -1,42 +1,46 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import img1 from './img1.webp';
+import img2 from './img2.webp';
+import img3 from './img3.webp';
 
 type CardScrollProps = {
   isActive: boolean;
+  titulo: string;
+  imagen: string; // Agregar prop "imagen"
 };
 
-const CardScroll: React.FC<CardScrollProps> = ({ isActive }) => {
+const titulos = ['Ejercicio tipo 1', 'Ejercicio tipo 2', 'Ejercicio tipo 3'];
+const imagenes = [img1, img2, img3]; // Array de imágenes correspondientes a los títulos
+
+const CardScroll: React.FC<CardScrollProps> = ({ isActive, titulo, imagen }) => {
+
   return (
     <>
       <div className={`scroll-3d ${isActive ? "active" : ""}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut,
-        veritatis, animi illum beatae voluptates tempora dolores numquam
-        provident esse, tenetur facere tempore accusamus distinctio. Impedit
-        nobis magni consectetur quo!
+        <h2>{titulo}</h2>
+        <img src={imagen} alt={titulo} /> {/* Usar la imagen correspondiente */}
       </div>
     </>
   );
 };
-
 
 export const Home = () => {
   const [activeScroll, setActiveScroll] = useState(0);
   const [cardsList, setCardsList] = useState([]);
 
   useEffect(() => {
-    const newCardsList = [
-      <CardScroll isActive={activeScroll === 0 ? true : false} />,
-      <CardScroll isActive={activeScroll === 1 ? true : false} />,
-      <CardScroll isActive={activeScroll === 2 ? true : false} />,
-      <CardScroll isActive={activeScroll === 3 ? true : false} />,
-      <CardScroll isActive={activeScroll === 4 ? true : false} />,
-      <CardScroll isActive={activeScroll === 5 ? true : false} />,
-      <CardScroll isActive={activeScroll === 6 ? true : false} />,
-    ];
+    const newCardsList = titulos.map((titulo, index) => (
+      <CardScroll
+        key={index}
+        isActive={index === activeScroll}
+        titulo={titulo}
+        imagen={imagenes[index]} // Pasar la imagen correspondiente
+      />
+    ));
     setCardsList(newCardsList);
   }, [activeScroll]);
 
-  
   return (
     <>
       <div className="row">
@@ -49,16 +53,14 @@ export const Home = () => {
                 const centerPosition =
                   element.scrollLeft + element.clientWidth / 2;
                 const index = Math.floor(
-                  (centerPosition / element.scrollWidth) * cardsList.length
+                  (centerPosition / element.scrollWidth) * titulos.length
                 );
                 setActiveScroll(index);
               }}
             >
               {cardsList.map((card, index) => {
                 return (
-                  <>
-                    <div key={index}>{card}</div>
-                  </>
+                  <div key={index}>{card}</div>
                 );
               })}
             </div>
