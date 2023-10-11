@@ -28,10 +28,16 @@
     border-radius: 20px;
     box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
 }
-.row>*{
-    padding: 90vh 0 0 0;
+.row{
+    padding: 85vh 0 0 0;
+    overflow: hidden;
+    --bs-gutter-x: 0;
+}
+.card-titulo{
+    color: var(--darkblue);
+    font-family: var(--text);
+    font-size: 1.8rem;
 }
 .container{
-    overflow-x: hidden;
     padding: 0;
 }

@@ -1,0 +1,14 @@
+
+/* Header */
+.princ-header{
+  height: 4rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-headers{
+  color: var(--lightblue);
+  font-size: 2.3rem;
+  font-family: var(--text);
+}
