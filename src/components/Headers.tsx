@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles.css';
+import { PrincipalContext } from '../context/PrincipalContext';
 
-interface HeadersProps {
-  nombreComponente: string;
-}
 
-export const Headers: React.FC<HeadersProps> = ({ nombreComponente }) => {
+
+export const Headers = () => {
+  let {handleChangeScreen, actualScreen, handleChangeScreenName, actualScreenName } = useContext(PrincipalContext)
+
+
   return (
     <div className='princ-header'>
-      <h2 className='titulo-headers'>{nombreComponente}</h2>
+      <h2 className='titulo-headers'>{actualScreenName}</h2>
     </div>
   );
 };

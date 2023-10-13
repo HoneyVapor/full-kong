@@ -8,12 +8,13 @@ import { Tooltip } from "antd";
 import "./NavBar.css";
 
 export const NavBar = () => {
-  const { handleChangeScreen } = useContext(PrincipalContext);
+  const { handleChangeScreen, handleChangeScreenName } = useContext(PrincipalContext);
   const [activeTab, setActiveTab] = useState<number>(1);
 
-  const handleReloadContent = (tab: number, screen: React.ReactNode) => {
+  const handleReloadContent = (tab: number, screen: React.ReactNode, name: string) => {
     setActiveTab(tab);
     handleChangeScreen(screen);
+    handleChangeScreenName(name);
   };
 
   return (
@@ -26,7 +27,7 @@ export const NavBar = () => {
                 className={`bi bi-house-fill nav-bar-icon ${
                   activeTab === 1 ? "active" : ""
                 }`}
-                onClick={() => handleReloadContent(1, <Home />)}
+                onClick={() => handleReloadContent(1, <Home />, 'Home')}
               ></i>
             </div>
           </Tooltip>
@@ -38,7 +39,7 @@ export const NavBar = () => {
                   activeTab === 2 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(2, <>Poner componente 'Exercises' aqui</>)
+                  handleReloadContent(2, <>Poner componente 'Exercises' aqui</>, 'Ejercicios')
                 }
               ></i>
             </div>
@@ -51,7 +52,7 @@ export const NavBar = () => {
                   activeTab === 3 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(3, <>Poner componente 'Progress' aqui</>)
+                  handleReloadContent(3, <>Poner componente 'Progress' aqui</>, 'Progreso')
                 }
               ></i>
             </div>
@@ -64,7 +65,7 @@ export const NavBar = () => {
                   activeTab === 4 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(4, <>Poner componente 'Profile' aqui</>)
+                  handleReloadContent(4, <>Poner componente 'Profile' aqui</>, 'Perfil')
                 }
               ></i>
             </div>
@@ -77,7 +78,7 @@ export const NavBar = () => {
                   activeTab === 5 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(5, <>Poner componente 'Premium' aqui</>)
+                  handleReloadContent(5, <>Poner componente 'Premium' aqui</>, 'Premium')
                 }
               ></i>
             </div>

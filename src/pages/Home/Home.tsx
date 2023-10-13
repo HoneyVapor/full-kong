@@ -47,13 +47,13 @@ export const Home = () => {
   return (
     <> 
       <div className="row">
-      <Headers nombreComponente={nombreComponente}/>
+      
         <div className="col-md-12">
           <div className="container">
             <div
               className="card-scroll"
               onScroll={(e) => {
-                const element = e.target;
+                const element = e.target as HTMLBRElement;
                 const centerPosition =
                   element.scrollLeft + element.clientWidth / 2;
                 const index = Math.floor(
