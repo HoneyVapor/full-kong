@@ -1,0 +1,36 @@
+:root {
+  /* ? Colors */
+  --black: #000000;
+  --white: #ffffff;
+  
+  --darkblue: #1b3146;
+  --lightblue: #4affff;
+
+  --grey: #a7a6a6;
+  --lightgrey: #dcdcdc;
+
+  /* ? Fonts */
+  --titles: 'Oswald', sans-serif;
+  --text: 'Nunito Sans', sans-serif;
+  --text-secondary: 'Kanit', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  width: 100vw;
+  height: auto;
+}
+
+.titles{
+  font-family: var(--titles);
+}
+.text{
+  font-family: var(--text);
+}
+.text-scnd{
+  font-family: var(--text-secondary);
+}
