@@ -11,13 +11,13 @@ type CardScrollProps = {
   imagen: string; // Agregar prop "imagen"
 };
 
-const nombreComponente = 'Home'
+
 const titulos = ['Ejercicio tipo 1', 'Ejercicio tipo 2', 'Ejercicio tipo 3'];
 const imagenes = [img1, img2, img3]; // Array de imágenes correspondientes a los títulos
 
 
 const CardScroll: React.FC<CardScrollProps> = ({ isActive, titulo, imagen }) => {
-
+  
   return (
     <>
       <div className={`scroll-3d ${isActive ? "active" : ""}`}>

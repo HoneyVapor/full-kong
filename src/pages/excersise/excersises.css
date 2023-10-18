@@ -1,0 +1,42 @@
+.cont-princ{
+    height: auto;
+    padding-bottom: 5rem;
+}
+.cont-sec{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.cont-sec p{
+    font-size: 1.35rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+.cont-scroll{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow-y: hidden;
+    background-color: rgb(222, 224, 224);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.auxiliar{
+    display: flex;
+    width: auto;
+    padding: .5rem 1rem;
+    
+}
+.cont-img{
+    width: 15rem;
+}
+.cont-img img{
+    display: block;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+}

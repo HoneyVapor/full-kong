@@ -6,6 +6,7 @@ import { navbar_elements } from "../../utils/labels";
 import { Tooltip } from "antd";
 
 import "./NavBar.css";
+import { Excersise } from "../../pages/excersise/Excersise";
 
 export const NavBar = () => {
   const { handleChangeScreen, handleChangeScreenName } = useContext(PrincipalContext);
@@ -39,7 +40,7 @@ export const NavBar = () => {
                   activeTab === 2 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(2, <>Poner componente 'Exercises' aqui</>, 'Ejercicios')
+                  handleReloadContent(2, <Excersise/>, 'Ejercicios')
                 }
               ></i>
             </div>
