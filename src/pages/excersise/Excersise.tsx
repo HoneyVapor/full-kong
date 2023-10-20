@@ -16,6 +16,11 @@ export const Excersise = () => {
           </div>
         </div>
       ))}
+      <div className='boton'>
+        <button onClick={(e) => {e.preventDefault(); alert('Hola')}}/>
+        <p>+</p>
+      </div>
+      
     </div>
   );
 }

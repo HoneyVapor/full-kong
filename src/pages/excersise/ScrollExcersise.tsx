@@ -7,6 +7,7 @@ type ScrollExcersiseProps = {
 
 export const ScrollExcersise: React.FC<ScrollExcersiseProps> = ({ tipo }) => {
   const [datoFiltrado, setDatoFiltrado] = useState<any>('');
+  let contador = 0
 
   useEffect(() => {
     // Filtra el objeto que coincide con el tipo
@@ -25,6 +26,7 @@ export const ScrollExcersise: React.FC<ScrollExcersiseProps> = ({ tipo }) => {
           {Object.keys(datoFiltrado).map((key) => {
             // Verifica si la propiedad comienza con 'url' para mostrar la imagen
             if (key.startsWith('url')) {
+              contador+=1
               return (
                 <div key={key} className='cont-img'>
                   <img src={datoFiltrado[key]} alt={`Imagen ${key}`} />
@@ -33,6 +35,7 @@ export const ScrollExcersise: React.FC<ScrollExcersiseProps> = ({ tipo }) => {
             }
             return null;
           })}
+          <p className='contador'> ({contador})</p>
         </div>
       ) : (
         <p>Objeto no encontrado</p>
