@@ -6,8 +6,12 @@ import { Principal } from "../Principal/Principal";
 
 import "./Login.css";
 
+
+
 export const Login = () => {
   const { handleChangePage } = useContext(PrincipalContext);
+
+
 
   return (
     <>
@@ -45,4 +49,4 @@ export const Login = () => {
       </div>
     </>
   );
-};
+}

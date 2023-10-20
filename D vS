@@ -1,0 +1,114 @@
+[33mcommit ca3499406c00ca001929336f205134443d8631ee[m[33m ([m[1;36mHEAD -> [m[1;32mlogin[m[33m, [m[1;31morigin/login[m[33m)[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Wed Oct 18 12:08:13 2023 -0800
+
+    Se agregó la categoria de excersises. El diseño ya quedó. Hace falta hacer la liga entre la página Principal y la de Excersises
+
+[33mcommit 20064aef3116c768c44a30d661aecfe8b1f1c0af[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Fri Oct 13 12:15:02 2023 -0800
+
+    Se integro useContext al header de todas las pantallas. Se quitó un error en el archivo Home.tsx
+
+[33mcommit 370c08f3c16aee814177239ac07e16c68d5dfe94[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Wed Oct 11 13:15:31 2023 -0800
+
+    Version preeliminar. Se modificó el CSS de Home. El diseño ya está terminado. Se eliminó el componente Carousel que no servia para nada
+
+[33mcommit b04b1d203b87dc7d0eed6cb4a03592cb7da2985f[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Wed Oct 11 11:26:19 2023 -0800
+
+    Se modificó el diseño de Home, ya cuenta con el carousel 3d que va a quedar. Solo hace falta conectar con la BD para obtener datos dinamicos. Se agregaron imagenes para tener de prueba
+
+[33mcommit 9ea5b779cd3f6137bea645c731a983cbd0054230[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Tue Oct 10 21:55:57 2023 -0800
+
+    Correcciion de caracteres raros en el codigo de Login.tsx y Login.css que no dejaban correr el programa
+
+[33mcommit c86f04c9380b2f916c31e7e5255ceb15a89f9355[m[33m ([m[1;32mmain[m[33m, [m[1;32mfull-kong/tree/login[m[33m)[m
+Merge: f3f0f9c e60bd0f
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Tue Oct 10 13:28:30 2023 -0800
+
+    Commit prueba
+
+[33mcommit f3f0f9c50d3b47807b466dc5467d74488ceee193[m
+Author: Patrick2618 <camachoo2618@gmail.com>
+Date:   Tue Oct 10 13:14:34 2023 -0800
+
+    Se agregó un diseño preeliminar al carousel en el componente Home. Se creó el comoponente header pero aun no esta terminado
+
+[33mcommit b5c87897a9328b56d7ac72ac18534cd092f79ac1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sun Oct 8 08:09:09 2023 -0600
+
+    Login changes updated
+
+[33mcommit 3b77a6225e951272b616db69952fddce717f2b5e[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sun Oct 8 08:00:33 2023 -0600
+
+    NavBar created and Principal page created
+
+[33mcommit 919f797c9b6b3559618bbfc5b04efa031c479298[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sat Oct 7 09:58:46 2023 -0600
+
+    README.md updated
+
+[33mcommit e60bd0f522f9f54d83cbbc15742eac94ff20b609[m
+Author: Patrick2618 <146683657+Patrick2618@users.noreply.github.com>
+Date:   Fri Oct 6 15:10:35 2023 -0800
+
+    Update index.css
+    
+    Modificacion de altura del body, se puso a auto. Esto para no tener problemas con los diseños de los componentes
+
+[33mcommit 644382fa047693377fce75faab3ebd8796261a12[m
+Author: Patrick2618 <146683657+Patrick2618@users.noreply.github.com>
+Date:   Fri Oct 6 15:09:16 2023 -0800
+
+    Update Login.css
+    
+    CSS de loggin listo
+
+[33mcommit 4f93ac4455684d49f230a8473f4b7c00ed5ea8be[m
+Author: Patrick2618 <146683657+Patrick2618@users.noreply.github.com>
+Date:   Fri Oct 6 15:08:50 2023 -0800
+
+    Update Login.tsx
+    
+    Html de login listo
+
+[33mcommit 44203e6dd4fb335e286a55823b91879c6bf07ad3[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Tue Oct 3 15:30:23 2023 -0600
+
+    Register created, context created, utils and lib updated for utilities and some libraries imported
+
+[33mcommit eae2eee10ad0050799ac7757a4be42f8f14a63c3[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sat Sep 30 15:09:39 2023 -0600
+
+    Files structure created
+
+[33mcommit 679dcf6cc2a9b4a8f3ec972b7220ba5aa4b276c5[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sat Sep 30 14:58:09 2023 -0600
+
+    Fonts, colors and config setted
+
+[33mcommit 81238682423e88cc5d273dbcbefb714b7ffdcd46[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sat Sep 30 14:43:42 2023 -0600
+
+    Libraries added
+
+[33mcommit 400dbdceb89520c83d2fa7eb92c59c3d9728b914[m
+Author: HoneyVapor <honeyvapor.contact@gmail.com>
+Date:   Sat Sep 30 14:32:42 2023 -0600
+
+    first commit
