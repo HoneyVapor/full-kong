@@ -1,0 +1,96 @@
+.exercises-final-container{
+    width: 100vw;
+    height: 80vh;
+
+    position: fixed;
+    top: 0vh;
+    left: 0;
+}
+
+.exercises-final-topbar{
+    width: 100vw;
+    height: 20vh;
+
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+.exercises-final-topbar p{
+    padding-left: 2.5vh;
+    padding-top: 2.5vh;
+    color: var(--lightblue);
+}
+.exercises-final-topbar span{
+    padding-left: 2.5vh;
+    margin-bottom: .8rem;
+}
+
+#exercises-slider{
+    display: block;
+    position: absolute;
+    right: 2.5vh;
+}
+
+
+.slider{
+    width: 7rem;
+}
+.pading-left{
+    margin-left: 2.5vh;
+    margin-top: 2rem;
+}
+.contadores{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5vh;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-progress.ant-progress-circle .ant-progress-text{
+    display: none;
+}
+.progress-circle{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2.7rem;
+}
+circle{
+    stroke-width: 20;
+}
+
+#active{
+    color: rgb(179, 0, 0);
+}
+.progress-circle p{
+    position: absolute;
+    left: 5.6rem;
+}
+
+
+.cont-scroll{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    overflow-y: hidden;
+    padding-top: 2rem;
+}
+.auxiliar{
+    display: flex;
+    width: auto;
+    height: 100%;
+    padding: .5rem 1rem;
+}
+.cont-img{
+    width: 20rem;
+}
+.cont-img img{
+    display: block;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.contador{
+    display: none;
+}

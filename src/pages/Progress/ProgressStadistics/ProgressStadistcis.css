@@ -1,0 +1,19 @@
+.progress-container{
+    width: 100vw;
+    height: 40vh;
+
+    margin-bottom: 5vh;
+    background-color: var(--darkblue);
+
+    text-align: center;
+
+    color: var(--white);
+}
+
+.progress-section-title{
+    width: 100vw;
+    height: max-content;
+
+    text-align: left;
+    color: var(--lightblue);
+}

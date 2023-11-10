@@ -1,6 +1,9 @@
 import { useContext, useState } from "react";
 import { PrincipalContext } from "../../context/PrincipalContext";
+
 import { Home } from "../../pages/Home/Home";
+import { Exercises } from "../../pages/Exercises/Exercises";
+import { Progress } from "../../pages/Progress/Progress";
 
 import { navbar_elements } from "../../utils/labels";
 import { Tooltip } from "antd";
@@ -37,9 +40,7 @@ export const NavBar = () => {
                 className={`bi bi-person-arms-up nav-bar-icon ${
                   activeTab === 2 ? "active" : ""
                 }`}
-                onClick={() =>
-                  handleReloadContent(2, <>Poner componente 'Exercises' aqui</>)
-                }
+                onClick={() => handleReloadContent(2, <Exercises />)}
               ></i>
             </div>
           </Tooltip>
@@ -50,9 +51,7 @@ export const NavBar = () => {
                 className={`bi bi-calendar-check-fill nav-bar-icon ${
                   activeTab === 3 ? "active" : ""
                 }`}
-                onClick={() =>
-                  handleReloadContent(3, <>Poner componente 'Progress' aqui</>)
-                }
+                onClick={() => handleReloadContent(3, <Progress />)}
               ></i>
             </div>
           </Tooltip>

@@ -1,0 +1,8 @@
+/* Header */
+.princ-header{
+    height: 5rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

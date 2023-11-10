@@ -1,0 +1,78 @@
+.exercises-final-container{
+    width: 100vw;
+    height: 80vh;
+
+    position: fixed;
+    top: 0vh;
+    left: 0;
+}
+
+.exercises-final-topbar{
+    width: 100vw;
+    height: 20vh;
+
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+.exercises-final-topbar p{
+    padding-left: 2.5vh;
+    padding-top: 2.5vh;
+    color: var(--lightblue);
+    margin-bottom: 1.5rem;
+}
+.exercises-final-topbar span{
+    margin-bottom: .8rem;
+}
+
+#exercises-slider{
+    display: block;
+    position: absolute;
+    right: 2.5vh;
+}
+
+
+.slider{
+    width: 7rem;
+}
+.pading-left{
+    margin-left: 2.5vh;
+    margin-top: 2rem;
+}
+.contadores{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5vh;
+    padding-left: 4rem;
+}
+span{
+    padding: 0;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-progress.ant-progress-circle .ant-progress-text{
+    display: none;
+}
+.progress-circle{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 4rem;
+}
+circle{
+    stroke-width: 20;
+}
+
+#active{
+    color: rgb(179, 0, 0);
+}
+
+#scroll-titulos{
+    padding-bottom: 2rem;
+    width: 20rem;
+}
+.scroll-text{
+    text-align: center;
+}
+.botonsote{
+    background-color: transparent;
+    border: 0;
+}

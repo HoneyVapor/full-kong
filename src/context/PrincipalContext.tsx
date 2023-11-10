@@ -13,6 +13,9 @@ type PrincipalContextProps = {
 
   actualScreen: React.ReactNode;
   handleChangeScreen: (newScreen: React.ReactNode) => void;
+
+  actualScreenName: string;
+  handleChangeScreenName: (newName: string) => void;
 };
 
 export const PrincipalContext = createContext<PrincipalContextProps>({
@@ -21,6 +24,9 @@ export const PrincipalContext = createContext<PrincipalContextProps>({
 
   actualScreen: <></>,
   handleChangeScreen: () => {},
+
+  actualScreenName: "",
+  handleChangeScreenName: () => {},
 });
 
 export const PrincipalContextProvider: React.FC<
@@ -28,6 +34,7 @@ export const PrincipalContextProvider: React.FC<
 > = (props) => {
   const [actualPage, setActualPage] = useState<React.ReactNode>(<Login />);
   const [actualScreen, setActualScreen] = useState<React.ReactNode>(<Home />);
+  const [actualScreenName, setActualScreenName] = useState<string>("");
 
   const handleChangePage = (newPage: React.ReactNode) => {
     setActualPage(newPage);
@@ -35,6 +42,10 @@ export const PrincipalContextProvider: React.FC<
 
   const handleChangeScreen = (newScreen: React.ReactNode) => {
     setActualScreen(newScreen);
+  };
+
+  const handleChangeScreenName = (newName: string) => {
+    setActualScreenName(newName);
   };
 
   return (
@@ -45,6 +56,9 @@ export const PrincipalContextProvider: React.FC<
 
         actualScreen,
         handleChangeScreen,
+
+        actualScreenName,
+        handleChangeScreenName,
       }}
     >
       {props.children}
