@@ -28,7 +28,7 @@ export const ScrollExcersise: React.FC<ScrollExcersiseProps> = ({ tipo }) => {
             if (key.startsWith('url')) {
               contador+=1
               return (
-                <div key={key} className='cont-img'>
+                <div key={key} className='cont-image'>
                   <img src={datoFiltrado[key]} alt={`Imagen ${key}`} />
                 </div>
               );

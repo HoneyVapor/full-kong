@@ -10,7 +10,7 @@ export const register_inputs = {
 
 export const navbar_elements = {
   home: "Principal",
-  exercises: "Ejercicios",
+  excersise: "Ejercicios",
   progress: "Progreso",
   profile: "Perfil",
   premium: "Premium",

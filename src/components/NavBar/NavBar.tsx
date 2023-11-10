@@ -33,14 +33,14 @@ export const NavBar = () => {
             </div>
           </Tooltip>
 
-          <Tooltip title={`${navbar_elements.exercises}`}>
+          <Tooltip title={`${navbar_elements.excersise}`}>
             <div className="nav-bar-element">
               <i
                 className={`bi bi-person-arms-up nav-bar-icon ${
                   activeTab === 2 ? "active" : ""
                 }`}
                 onClick={() =>
-                  handleReloadContent(2, <Excersise/>, 'Ejercicios')
+                  handleReloadContent(2, <Excersise />, 'Ejercicios')
                 }
               ></i>
             </div>

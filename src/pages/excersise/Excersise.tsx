@@ -1,10 +1,14 @@
-
+import { useContext } from "react";
 import { datos } from './datos';
 import { ScrollExcersise } from './ScrollExcersise';
-import './excersises.css'
+import { PrincipalContext } from "../../context/PrincipalContext";
+import {CrearRutina} from './CrearRutina'
+import './Excersise.css'
 
 
 export const Excersise = () => {
+
+  const { handleChangePage } = useContext(PrincipalContext); 
 
   return (
     <div className='cont-princ'>
@@ -17,8 +21,9 @@ export const Excersise = () => {
         </div>
       ))}
       <div className='boton'>
-        <button onClick={(e) => {e.preventDefault(); alert('Hola')}}/>
-        <p>+</p>
+        <button onClick={() => {handleChangePage(<CrearRutina/>)}}>
+          <p>+</p>
+        </button>
       </div>
       
     </div>
