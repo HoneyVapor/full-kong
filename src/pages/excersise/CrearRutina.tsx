@@ -11,6 +11,8 @@ export const CrearRutina = () => {
   const [selectedReps, setSelectedReps] = useState(1);
   const { handleChangePage } = useContext(PrincipalContext); 
 
+  const titulos = ['Ejercicio tipo 1', 'Ejercicio tipo 2', 'Ejercicio tipo 3'];
+
   const onChangeReps = (newValue: number) => {
     setSelectedReps(newValue);
   };
@@ -32,8 +34,8 @@ export const CrearRutina = () => {
             <p>Volver</p>
           </button>
           <div className="contadores">
-            <span>Tiempo: </span>
-            <span>Repeticiones: {selectedReps}</span>
+            <span>Tiempo: <span id={selectedTime==60 ? ('active'):''} >{selectedTime}s</span></span>
+            <span>Repeticiones: <span id={selectedReps==20 ? ('active'):''} >{selectedReps}</span></span>
           </div>
 
           {/* ProgressBar original */}
@@ -56,10 +58,9 @@ export const CrearRutina = () => {
             <Progress
               type="circle"
               percent={(selectedTime / 60) * 100}
-              width={70}
+              width={35}
               
             />
-            <p id={selectedTime==60 ? ('active'):''} >{selectedTime}s</p>
           </div>
 
           <Slider
@@ -76,10 +77,11 @@ export const CrearRutina = () => {
           {datos.map((item, index) => (
             index === 2 ? (
               <>
-              <ScrollExcersise tipo={item.tipo} key={index} />
+              <ScrollExcersise tipo={item.tipo} key={index} titulos={titulos}/>
               </>
             ) : null
           ))}
+          
         </div>
       </div>
     </>
